@@ -76,7 +76,8 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // Unique One rev. A          = 88
 // User layout defined in userpins.h = 999
 
-#define MOTHERBOARD 33
+#define MOTHERBOARD 63
+#define REPRAPPRO_HUXLEY
 
 #include "pins.h"
 
@@ -612,10 +613,10 @@ on this endstop.
 
 #define MIN_HARDWARE_ENDSTOP_X true
 #define MIN_HARDWARE_ENDSTOP_Y true
-#define MIN_HARDWARE_ENDSTOP_Z false
+#define MIN_HARDWARE_ENDSTOP_Z true
 #define MAX_HARDWARE_ENDSTOP_X false
 #define MAX_HARDWARE_ENDSTOP_Y false
-#define MAX_HARDWARE_ENDSTOP_Z true
+#define MAX_HARDWARE_ENDSTOP_Z false
 
 //If your axes are only moving in one direction, make sure the endstops are connected properly.
 //If your axes move in one direction ONLY when the endstops are triggered, set ENDSTOPS_INVERTING to true here
